@@ -1,4 +1,4 @@
-import { counterItems } from "../../constants/index.js"
+import { counterItems } from "../constants/index.js"
 import CountUpModule from "react-countup";
 
 const CountUp = CountUpModule.default || CountUpModule;
