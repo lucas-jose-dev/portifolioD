@@ -1,0 +1,25 @@
+{
+    "navLinks": {
+        "Work": "Projetos",
+        "Experience": "Experiência",
+        "Skills": "Habilidades",
+        "Testimonials": "Depoimentos"
+    },
+    "contact": "Contato",
+
+
+
+    "hero": {
+        "shaping": "Criando",
+        "projects": "Projetos Reais",
+        "results": "com Resultados",
+        "description": "Olá, eu sou Lucas, desenvolvedor de software apaixonado por programação.",
+        "button": "Ver Projetos",
+        "words": {
+            "ideas": "Ideias",
+            "concepts": "Conceitos",
+            "designs": "Designs",
+            "code": "Código"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "navLinks": {
+        "Work": "Work",
+        "Experience": "Experience",
+        "Skills": "Skills",
+        "Testimonials": "Testimonials"
+    },
+    "contact": "Contact",
+    
+
+
+    "hero": {
+    "shaping": "Shaping",
+    "projects": "into Real Projects",
+    "results": "that Deliver Results",
+
+    "description": "Hi, I'm Lucas, a developer based in Croatia with a passion for code",
+
+    "button": "See my Work",
+
+    "words": {
+      "ideas": "Ideas",
+      "concepts": "Concepts",
+      "designs": "Designs",
+      "code": "Code"
+    }
+  }
+}
