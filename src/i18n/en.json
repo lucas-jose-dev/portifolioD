@@ -1,28 +1,127 @@
 {
-    "navLinks": {
-        "Work": "Work",
-        "Experience": "Experience",
-        "Skills": "Skills",
-        "Testimonials": "Testimonials"
-    },
-    "contact": "Contact",
-    
-
-
-    "hero": {
+  "navLinks": {
+    "Work": "Work",
+    "Experience": "Experience",
+    "Skills": "Skills",
+    "Testimonials": "Testimonials"
+  },
+  "contact": "Contact",
+  "hero": {
     "shaping": "Shaping",
     "projects": "into Real Projects",
     "results": "that Deliver Results",
-
     "description": "Hi, I'm Lucas, a developer based in Croatia with a passion for code",
-
     "button": "See my Work",
-
     "words": {
       "ideas": "Ideas",
       "concepts": "Concepts",
       "designs": "Designs",
       "code": "Code"
+    }
+  },
+  "counter": {
+    "experience": "Years of Experience",
+    "clients": "Satisfied Clients",
+    "projects": "Completed Projects",
+    "retention": "Client Retention Rate"
+  },
+  "showcase": {
+    "bellasalao": {
+      "title": "A website designed to streamline the client scheduling process and provide a more professional presentation of the services offered.",
+      "description": "User interface developed with React.js, using Hooks, Props, Children, componentization, and a focus on user experience."
+    },
+    "portfolio": {
+      "title": "Web Application Portfolio."
+    },
+    "trips": {
+      "title": "Responsive landing page for a travel company."
+    },
+    "projectBellaSalao": {
+      "title": "Go to BellaSalão project"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Quality Focus",
+      "desc": "Delivering high-quality results while maintaining attention to every detail."
+    },
+    "communication": {
+      "title": "Reliable Communication",
+      "desc": "Keeping you updated at every step to ensure transparency and clarity."
+    },
+    "delivery": {
+      "title": "On-Time Delivery",
+      "desc": "Making sure projects are completed on schedule, with quality and attention to detail."
+    }
+  },
+  "experience": {
+    "title": "Professional Work Experience",
+    "sub": "💼 My Career Overview",
+    "responsibilities": "Responsibilities",
+    "cards": {
+      "frontend": {
+        "review": "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+        "title": "Frontend Developer",
+        "date": "January 2025 - Present",
+        "responsibilities": {
+          "0": "Developed and maintained user-facing features for the Hostinger website.",
+          "1": "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
+          "2": "Optimized web applications for maximum speed and scalability."
+        }
+      }
+    }
+  },
+  "tech": {
+    "title": "My Preferred Tech Stack",
+    "sub": "🤝 The Skills I Bring to the Table",
+    "cards": {
+      "javascript": "Javascript Developer",
+      "typescript": "TypeScript Developer",
+      "react": "React Developer",
+      "backend": "Node.js Developer",
+      "html": "Frontend Structure",
+      "css": "Interface Styling",
+      "tailwind": "Utility-First Styling",
+      "sass": "Scalable Styling",
+      "interactive": "3D Web Experiences",
+      "git": "Project Manager"
+    }
+  },
+  "testimonials": {
+    "title": "What People Say About Me?",
+    "sub": "⭐ Client Feedback Highlights",
+    "cards": {
+      "esther": {
+        "review": "I can’t say enough good things about Lucas."
+      },
+      "wade": {
+        "review": "Lucas expertise in web development is truly impressive."
+      },
+      "whadi": {
+        "review": "Lucas delivered a modern, responsive, and very well-organized project. Beyond the visual quality, the entire system is fast, intuitive, and offers a great user experience. Communication during development was excellent, and all changes were made with meticulous attention to detail."
+      }
+    }
+  },
+  "contactForm": {
+    "title": "Get in Touch – Let’s Connect",
+    "sub": "💬 Have questions or ideas? Let’s talk! 🚀",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "What’s your good name?",
+      "email": "Your Email",
+      "emailPlaceholder": "What’s your email address?",
+      "message": "Your Message",
+      "messagePlaceholder": "How can I help you?",
+      "sending": "Sending...",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "blog": "Visit my blog",
+    "rights": "All rights reserved.",
+    "file": {
+      "downloading": "Downloading Resume...",
+      "download": "Download Resume"
     }
   }
 }

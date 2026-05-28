@@ -1,6 +1,10 @@
 import { abilities } from "../constants/index.js"
 
+import { useTranslation } from "react-i18next"
+
 const FeatureCards = () => {
+    const { t } = useTranslation()
+
     return (
         <div className="w-full padding-x-lg">
             <div className="mx-auto grid-3-cols">
@@ -11,10 +15,10 @@ const FeatureCards = () => {
 
                         </div>
                         <h3 className="text-white text-2xl font-semibold mt-2">
-                            {title}
+                            {t(title)}
 
                         </h3>
-                        <p className="text-white-50 text-lg">{desc}</p>
+                        <p className="text-white-50 text-lg">{t(desc)}</p>
                     </div>
                 ))}
 

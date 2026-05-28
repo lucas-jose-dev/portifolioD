@@ -1,6 +1,8 @@
 import { useRef } from "react"
+import { useTranslation } from "react-i18next"
 
 const GlowCard = ({card, children, index}) => {
+    const { t } = useTranslation()
 
     const cardRefs = useRef([])
     
@@ -35,7 +37,7 @@ const GlowCard = ({card, children, index}) => {
             </div>
             <div className="mb-5">
                 <p className="text-white-50 text-lg">
-                    {card.review}
+                    {t(card.review)}
                 </p>
             </div>
             {children}

@@ -4,7 +4,10 @@ import { techStackIcons, techStackImgs } from "../constants/index"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
 
+import { useTranslation } from "react-i18next"
+
 const TechStack = () => {
+    const { t } = useTranslation()
 
     useGSAP(() => {
         gsap.fromTo('.tech-card', { y: 50, opacity: 0 }, {
@@ -24,8 +27,8 @@ const TechStack = () => {
         <div id="skills" className="flex-center section-padding">
             <div className="w-full h-full md:px-10 px-5">
                 <TitleHeader
-                    title="My Preferred Tech Stack"
-                    sub="🤝 The Skills I Bring to the Table"
+                    title={t("tech.title")}
+                    sub={t("tech.sub")}
                 />
 
                 <div className="tech-grid">
@@ -38,7 +41,7 @@ const TechStack = () => {
                                 </div>
                                 <div className="padding-x w-full">
                                     <p>
-                                        {icon.name}
+                                        {t(icon.name)}
 
                                     </p>
 

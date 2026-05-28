@@ -1,11 +1,11 @@
-import { useRef, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useRef, useMemo } from "react"
+import { useFrame } from "@react-three/fiber"
 
 const Particles = ({ count = 200 }) => {
-  const mesh = useRef();
+  const mesh = useRef()
 
   const particles = useMemo(() => {
-    const temp = [];
+    const temp = []
     for (let i = 0; i < count; i++) {
       temp.push({
         position: [
@@ -14,28 +14,28 @@ const Particles = ({ count = 200 }) => {
           (Math.random() - 0.5) * 10,
         ],
         speed: 0.005 + Math.random() * 0.001,
-      });
+      })
     }
-    return temp;
-  }, [count]);
+    return temp
+  }, [count])
 
   useFrame(() => {
-    const positions = mesh.current.geometry.attributes.position.array;
+    const positions = mesh.current.geometry.attributes.position.array
     for (let i = 0; i < count; i++) {
-      let y = positions[i * 3 + 1];
-      y -= particles[i].speed;
-      if (y < -2) y = Math.random() * 10 + 5;
-      positions[i * 3 + 1] = y;
+      let y = positions[i * 3 + 1]
+      y -= particles[i].speed
+      if (y < -2) y = Math.random() * 10 + 5
+      positions[i * 3 + 1] = y
     }
-    mesh.current.geometry.attributes.position.needsUpdate = true;
-  });
+    mesh.current.geometry.attributes.position.needsUpdate = true
+  })
 
-  const positions = new Float32Array(count * 3);
+  const positions = new Float32Array(count * 3)
   particles.forEach((p, i) => {
-    positions[i * 3] = p.position[0];
-    positions[i * 3 + 1] = p.position[1];
-    positions[i * 3 + 2] = p.position[2];
-  });
+    positions[i * 3] = p.position[0]
+    positions[i * 3 + 1] = p.position[1]
+    positions[i * 3 + 2] = p.position[2]
+  })
 
   return (
     <points ref={mesh}>
@@ -55,7 +55,7 @@ const Particles = ({ count = 200 }) => {
         depthWrite={false}
       />
     </points>
-  );
-};
+  )
+}
 
-export default Particles;
+export default Particles

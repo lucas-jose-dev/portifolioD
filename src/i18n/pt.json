@@ -6,9 +6,6 @@
         "Testimonials": "Depoimentos"
     },
     "contact": "Contato",
-
-
-
     "hero": {
         "shaping": "Criando",
         "projects": "Projetos Reais",
@@ -20,6 +17,111 @@
             "concepts": "Conceitos",
             "designs": "Designs",
             "code": "Código"
+        }
+    },
+    "counter": {
+        "experience": "Anos de Experiência",
+        "clients": "Clientes Satisfeitos",
+        "projects": "Projetos Concluídos",
+        "retention": "Taxa de Retenção"
+    },
+    "showcase": {
+        "bellasalao": {
+            "title": "Site para agilizar o processo de agendamento ao cliente e proporcionar uma apresentação mais profissional dos serviços oferecidos.",
+            "description": "Interface desenvolvida com React.js, utilizando Hooks, Props, Children, componentização e foco na experiência do usuário."
+        },
+        "portfolio": {
+            "title": "Portifólio de Aplicações Web."
+        },
+        "trips": {
+            "title": "Landing page responsiva para empresa de viagens."
+        },
+        "projectBellaSalao": {
+            "title": "Ir para projeto BellaSalão"
+        }
+    },
+    "features": {
+        "quality": {
+            "title": "Foco em Qualidade",
+            "desc": "Entregando resultados de alta qualidade com atenção a cada detalhe."
+        },
+        "communication": {
+            "title": "Comunicação Confiável",
+            "desc": "Mantendo você atualizado em cada etapa com clareza e transparência."
+        },
+        "delivery": {
+            "title": "Entrega no Prazo",
+            "desc": "Garantindo projetos entregues no prazo com qualidade e atenção aos detalhes."
+        }
+    },
+    "experience": {
+        "title": "Experiência Profissional",
+        "sub": "💼 Minha Trajetória Profissional",
+        "responsibilities": "Responsabilidades",
+        "cards": {
+            "frontend": {
+                "review": "Lucas trouxe criatividade e conhecimento técnico para a equipe, melhorando significativamente nossa performance no frontend. Seu trabalho foi essencial para entregar experiências mais rápidas.",
+                "title": "Desenvolvedor Front-End",
+                "date": "Janeiro 2025 - Atualmente",
+                "responsibilities": {
+                    "0": "Desenvolvi e mantive funcionalidades voltadas ao usuário para o site.",
+                    "1": "Colaborei com designers UI/UX para garantir experiências fluidas e intuitivas.",
+                    "2": "Otimizei aplicações web para máxima velocidade e escalabilidade."
+                }
+            }
+        }
+    },
+    "tech": {
+        "title": "Minha Stack de Tecnologias",
+        "sub": "🤝 As Habilidades que Trago para a Mesa",
+        "cards": {
+            "javascript": "Desenvolvedor Javascript",
+            "typescript": "Desenvolvedor TypeScript",
+            "react": "Desenvolvedor React",
+            "backend": "Desenvolvedor Node.js",
+            "html": "Estrutura de Frontend",
+            "css": "Estilização de Interface",
+            "tailwind": "Estilização Priorizando a Utilidade",
+            "sass": "Estilização Escalável",
+            "interactive": "Experiências Web 3D",
+            "git": "Gerenciamento de Projetos"
+        }
+    },
+    "testimonials": {
+        "title": "O Que Dizem Sobre Mim?",
+        "sub": "⭐ Destaques do Feedback dos Clientes",
+        "cards": {
+            "esther": {
+                "review": "Não consigo falar coisas boas o suficiente sobre Lucas."
+            },
+            "wade": {
+                "review": "A experiência de Lucas em desenvolvimento web é realmente impressionante."
+            },
+            "whadi": {
+                "review": "Lucas entregou um projeto moderno, responsivo e muito bem organizado. Além da qualidade visual, todo o sistema ficou rápido, intuitivo e com ótima experiência para os usuários. A comunicação durante o desenvolvimento foi excelente e todas as alterações foram feitas com muita atenção aos detalhes."
+            }
+        }
+    },
+    "contactForm": {
+        "title": "Entre em Contato – Vamos Conversar",
+        "sub": "💬 Tem dúvidas ou ideias? Vamos conversar! 🚀",
+        "form": {
+            "name": "Seu Nome",
+            "namePlaceholder": "Qual é o seu nome?",
+            "email": "Seu Email",
+            "emailPlaceholder": "Qual é o seu endereço de email?",
+            "message": "Sua Mensagem",
+            "messagePlaceholder": "Como posso te ajudar?",
+            "sending": "Enviando...",
+            "send": "Enviar Mensagem"
+        }
+    },
+    "footer": {
+        "blog": "Visite meu blog",
+        "rights": "Todos os direitos reservados.",
+        "file": {
+            "downloading": "Baixando Currículo...",
+            "download": "Baixar Currículo"
         }
     }
 }

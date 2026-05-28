@@ -1,7 +1,7 @@
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei"
+import { Canvas } from "@react-three/fiber"
 
-import { Computer } from "./Models/Computer-optimized";
+import { Computer } from "./Models/Computer-optimized"
 
 const ContactExperience = () => {
   return (
@@ -38,7 +38,7 @@ const ContactExperience = () => {
         <Computer />
       </group>
     </Canvas>
-  );
-};
+  )
+}
 
-export default ContactExperience;
+export default ContactExperience

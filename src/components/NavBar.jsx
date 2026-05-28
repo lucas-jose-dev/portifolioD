@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { navLinks } from "../constants"
-import i18n from "i18next";
-import { useTranslation } from "react-i18next";
+import i18n from "i18next"
+import { useTranslation } from "react-i18next"
 // import LanguageDetector from "i18next-browser-languagedetector"; Quando terminar a tradução
 
 const Navbar = () => {

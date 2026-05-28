@@ -2,10 +2,14 @@ import { useRef } from "react"
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/all"
 import { useGSAP } from "@gsap/react"
+import { useTranslation } from "react-i18next"
 
 gsap.registerPlugin(ScrollTrigger)
 
 const ShowcaseSection = () => {
+    
+    const { t } = useTranslation()
+
     const sectionRef = useRef(null)
     const project1Ref = useRef(null)
     const project2Ref = useRef(null)
@@ -14,6 +18,7 @@ const ShowcaseSection = () => {
     
     
     useGSAP(() => {
+
         const projects = [project1Ref.current, project2Ref.current, project3Ref.current]
 
         projects.forEach((card, index) => {
@@ -51,14 +56,14 @@ const ShowcaseSection = () => {
                 <div className="showcaselayout">
                     {/* LEFT */}
                     <div className="first-project-wrapper" ref={project1Ref}>
-                        <div className="image-wrapper">
-                            <img src="/images/project1.png" alt="Ryde" />
+                        <a href="https://bella-salao.vercel.app/" title={t("showcase.projectBellaSalao.title")} className="image-wrapper">
+                            <img src="/images/bella-project.png" alt="Salão" className="object-fill" />
 
-                        </div>
+                        </a>
                         <div className="text-content">
-                            <h2>On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</h2>
+                            <h2>{t("showcase.bellasalao.title")}</h2>
                             <p className="text-white-50 md:text-xl">
-                                An app build with React Native, Expo, E TailwindCSS for a fast, user-friendly experience.
+                                {t("showcase.bellasalao.description")}
                             </p>
 
                         </div>
@@ -70,15 +75,15 @@ const ShowcaseSection = () => {
                     <div className="project-list-wrapper overflow-hidden">
                         <div className="project" ref={project2Ref}>
                             <div className="image-wrapper bg-[#ffefdb]">
-                                <img src="/images/project2.png" alt="Library Management" />
+                                <img src="/images/project-portfolio.png" alt="Portifólio" />
                             </div>
-                            <h2>Library Management Platform</h2>
+                            <h2>{t("showcase.portfolio.title")}</h2>
                         </div>
                         <div className="project" ref={project3Ref}>
                             <div className="image-wrapper bg-[#ffe7eb]">
-                                <img src="/images/project3.png" alt="YC Directory" />
+                                <img src="/images/project-viagens.png" alt="Viagens" />
                             </div>
-                            <h2>YC Directory - A Startup Showcase App</h2>
+                            <h2>{t("showcase.trips.title")}</h2>
                         </div>
 
                     </div>

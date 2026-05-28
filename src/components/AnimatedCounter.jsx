@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next"
 import { counterItems } from "../constants/index.js"
-import CountUpModule from "react-countup";
+import CountUpModule from "react-countup"
 
-const CountUp = CountUpModule.default || CountUpModule;
+const CountUp = CountUpModule.default || CountUpModule
 
 const AnimatedCounter = () => {
+    const { t } = useTranslation()
+
     return (
         <div id="counter" className="padding-x-lg xl:mt-0 mt-32">
             <div className="mx-auto grid-4-cols">
@@ -19,7 +22,7 @@ const AnimatedCounter = () => {
                                 scrollSpyDelay={200}
                             />
                         </div>
-                        <div className="text-white-50 text-lg">{item.label}</div>
+                        <div className="text-white-50 text-lg">{t(item.label)}</div>
                     </div>
                 ))}
 
