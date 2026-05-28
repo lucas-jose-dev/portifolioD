@@ -82,7 +82,7 @@ const ExperienceSection = () => {
                                             <div className="gradient-line w-1 h-full" />
 
                                         </div>
-                                        <div className="expText flex xl:gap-20 md: gap-10 gap-5 relative z-20">
+                                        <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                                             <div className="timeline-logo">
                                                 <img src={card.logoPath} alt="logo" className="rounded-full"/>
 
@@ -91,10 +91,10 @@ const ExperienceSection = () => {
                                                 <h1 className="font-semibold text-3xl">
                                                     {t(card.title)}
                                                 </h1>
-                                                <p className="mv-5 text-white-50">
+                                                <p className="my-5 text-white-50">
                                                     {t(card.date)}
                                                 </p>
-                                                <p className="text-[#839cb5] stalic">
+                                                <p className="text-[#839cb5] italic">
                                                     {t("experience.responsibilities")}
                                                 </p>
                                                 <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
