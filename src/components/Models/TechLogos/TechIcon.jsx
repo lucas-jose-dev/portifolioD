@@ -11,7 +11,7 @@ const TechIcon = ({ model }) => {
         if (model.name === 'Interactive Developer') {
             scene.scene.traverse((child) => {
                 if (child.isMesh && child.name === 'Object_5') {
-                    child.material = new THREE.MeshStandardMaterial({ color: 'white'})
+                    child.material = new THREE.MeshStandardMaterial({ color: 'white' })
                 }
             })
         }
@@ -19,9 +19,14 @@ const TechIcon = ({ model }) => {
     }, [scene])
 
     return (
-        <Canvas>
+        <Canvas
+            camera={{
+                position: [0, 0, 8],
+                fov: 45
+            }}
+        >
             <ambientLight intensity={0.3} />
-            <directionalLight position={[5,5,5]} intensity={1} />
+            <directionalLight position={[5, 5, 5]} intensity={1} />
 
             <Environment preset="city" />
 

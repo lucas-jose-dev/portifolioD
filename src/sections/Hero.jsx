@@ -2,7 +2,7 @@ import { words } from "../constants"
 import Button from "../components/Button"
 import HeroExperience from "../components/HeroMoldels/HeroExperience"
 
-import { useGSAP} from '@gsap/react'
+import { useGSAP } from '@gsap/react'
 import { gsap } from "gsap"
 import AnimatedCounter from "../components/AnimatedCounter"
 
@@ -24,7 +24,7 @@ const Hero = () => {
                 duration: 1,
                 ease: 'power2.inOut'
             },
-            )
+        )
     })
 
     return (
@@ -42,14 +42,17 @@ const Hero = () => {
                                 {t("hero.shaping")}
                                 <span className="slide">
                                     <span className="wrapper">
-                                        {words.map((words) => (
-                                            <span key={words.text} className="flex items-center md:gap-3 gap-1 pb-2">
+                                        {words.map((word, index) => (
+                                            <span
+                                                key={`${word.text}-${index}`}
+                                                className="flex items-center md:gap-3 gap-1 pb-2"
+                                            >
                                                 <img
-                                                    src={words.imgPath}
-                                                    alt={words.text}
+                                                    src={word.imgPath}
+                                                    alt={word.text}
                                                     className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                                                 />
-                                                <span>{t(words.text)}</span>
+                                                <span>{t(word.text)}</span>
                                             </span>
                                         ))}
                                     </span>
@@ -70,12 +73,12 @@ const Hero = () => {
                         />
                     </div>
                 </header>
-                
+
 
                 {/* RIGHT: 3D MODEL */}
                 <figure>
                     <div className="hero-3d-layout">
-                     <HeroExperience />
+                        <HeroExperience />
                     </div>
                 </figure>
             </div>

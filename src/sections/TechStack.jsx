@@ -3,11 +3,35 @@ import TitleHeader from "../components/TitleHeader"
 import { techStackIcons, techStackImgs } from "../constants/index"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
+import { useRef, useState, useEffect } from "react"
 
 import { useTranslation } from "react-i18next"
 
 const TechStack = () => {
     const { t } = useTranslation()
+
+    const sectionRef = useRef(null)
+    const [visible, setVisible] = useState(false)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setVisible(true)
+                    observer.disconnect()
+                }
+            },
+            {
+                threshold: 0.1
+            }
+        )
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current)
+        }
+
+        return () => observer.disconnect()
+    }, [])
 
     useGSAP(() => {
         gsap.fromTo('.tech-card', { y: 50, opacity: 0 }, {
@@ -24,7 +48,11 @@ const TechStack = () => {
     })
 
     return (
-        <div id="skills" className="flex-center section-padding">
+        <div
+            id="skills"
+            ref={sectionRef}
+            className="flex-center section-padding"
+        >
             <div className="w-full h-full md:px-10 px-5">
                 <TitleHeader
                     title={t("tech.title")}
@@ -37,7 +65,7 @@ const TechStack = () => {
                             <div className="tech-card-animated-bg" />
                             <div className="tech-card-content">
                                 <div className="tech-icon-wrapper">
-                                    <TechIcon model={icon} />
+                                    {visible && <TechIcon model={icon} />}
                                 </div>
                                 <div className="padding-x w-full">
                                     <p>
