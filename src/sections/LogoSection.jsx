@@ -3,7 +3,7 @@ import { logoIconsList } from "../constants"
 const LogoIcon = ({ icon }) => {
     return (
         <div className="flex-nome flex-center marquee-item">
-            <img src={icon.imgPath} alt={icon.name} />
+            <img src={icon.imgPath} alt={icon.name} className=" w-60 h-50"/>
 
         </div>
     )
@@ -16,7 +16,7 @@ const LogoSection = () => {
             <div className="gradient-edge" />
 
             <div className="marquee h-52">
-                <div className="marquee-box md:gap-12 gap-5">
+                <div className="marquee-box">
                     {logoIconsList.map((icon, index) => (
                         <LogoIcon
                             key={`first-${index}`}
