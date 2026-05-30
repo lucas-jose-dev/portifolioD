@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="footer-container">
 
                 <button type="button" onClick={handleDownload} disabled={loading}>
-                    <div className="cta-button group h-12 w-100">
+                    <div className="cta-button group">
                         <div className="bg-circle" />
                         <p className="text">
                             {loading

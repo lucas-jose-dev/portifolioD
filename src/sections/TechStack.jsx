@@ -4,14 +4,21 @@ import { techStackIcons, techStackImgs } from "../constants/index"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
 import { useRef, useState, useEffect } from "react"
+import { useMediaQuery } from "react-responsive"
 
 import { useTranslation } from "react-i18next"
+
 
 const TechStack = () => {
     const { t } = useTranslation()
 
+    const isMobile = useMediaQuery({
+        query: "(max-width: 768px)"
+    })
+
     const sectionRef = useRef(null)
     const [visible, setVisible] = useState(false)
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -60,41 +67,45 @@ const TechStack = () => {
                 />
 
                 <div className="tech-grid">
-                    {techStackIcons.map((icon) => (
-                        <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
-                            <div className="tech-card-animated-bg" />
-                            <div className="tech-card-content">
-                                <div className="tech-icon-wrapper">
-                                    {visible && <TechIcon model={icon} />}
-                                </div>
-                                <div className="padding-x w-full">
-                                    <p>
-                                        {t(icon.name)}
+                    {isMobile
+                        ? techStackImgs.map((icon) => (
+                            <div
+                                key={icon.name}
+                                className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+                            >
+                                <div className="tech-card-content">
+                                    <div className="tech-icon-wrapper">
+                                        <img
+                                            src={t(icon.imgPath)}
+                                            alt={t(icon.name)}
+                                            className=""
+                                        />
+                                    </div>
 
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    ))}
-
-                    {/* pilha de icons no fromato de imagem, caso não encontre icons em 3D */}
-                    {/* {techStackImgs.map((icon) => (
-                        <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
-                            <div className="tech-card-animated-bg" />
-                            <div className="tech-card-content">
-                                <div className="tech-icon-wrapper">
-                                    <img src={icon.imgPath} />
-                                </div>
-                                <div className="padding-x w-full">
-                                    <p>{icon.name}</p>
+                                    <div className="padding-x w-full">
+                                        <p>{t(icon.name)}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))} */}
+                        ))
+                        : techStackIcons.map((icon) => (
+                            <div
+                                key={icon.name}
+                                className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+                            >
+                                <div className="tech-card-animated-bg" />
 
+                                <div className="tech-card-content">
+                                    <div className="tech-icon-wrapper">
+                                        {visible && <TechIcon model={icon} />}
+                                    </div>
+
+                                    <div className="padding-x w-full">
+                                        <p>{t(icon.name)}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                 </div>
             </div>
         </div>

@@ -91,23 +91,43 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "tech.cards.javascript",
+    imgPath: "/images/logos/javascript.png",
+  },
+  {
+    name: "tech.cards.typescript",
+    imgPath: "/images/logos/typescript.png",
+  },
+  {
+    name: "tech.cards.react",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
+    name: "tech.cards.backend",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "tech.cards.html",
+    imgPath: "/images/logos/html.png",
+  },
+  {
+    name: "tech.cards.css",
+    imgPath: "/images/logos/css.png",
+  },
+  {
+    name: "tech.cards.tailwind",
+    imgPath: "/images/logos/tailwind.png",
+  },
+  {
+    name: "tech.cards.sass",
+    imgPath: "/images/logos/sass.png",
+  },
+  {
+    name: "tech.cards.interactive",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "tech.cards.git",
     imgPath: "/images/logos/git.svg",
   },
 ];
