@@ -54,7 +54,7 @@ const Navbar = () => {
                             <button
                                 type="button"
                                 onClick={() => i18n.changeLanguage("en")}
-                                className="flex justify-center items-center gap-1"
+                                className="flex justify-center items-center gap-1 cursor-pointer"
                             >
                                 <p>EN</p>
                                 <img src="/images/en.png" alt="English" className="h-3.5 w-3.5" />
@@ -63,7 +63,7 @@ const Navbar = () => {
                             <button
                                 type="button"
                                 onClick={() => i18n.changeLanguage("pt")}
-                                className="flex justify-center items-center gap-1"
+                                className="flex justify-center items-center gap-1 cursor-pointer"
                             >
                                 <p>PT</p>
                                 <img src="/images/pt.png" alt="Português" className="h-3.5 w-3.5" />

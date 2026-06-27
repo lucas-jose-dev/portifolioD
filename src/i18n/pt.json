@@ -27,7 +27,7 @@
     },
     "showcase": {
         "bellasalao": {
-            "title": "Site para agilizar o processo de agendamento ao cliente e proporcionar uma apresentação mais profissional dos serviços oferecidos.",
+            "title": "Um site projetado para agilizar o processo de agendamento de clientes e proporcionar uma apresentação mais profissional dos serviços oferecidos.",
             "description": "Interface desenvolvida com React.js, utilizando Hooks, Props, Children, componentização e foco na experiência do usuário."
         },
         "portfolio": {

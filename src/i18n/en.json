@@ -1,6 +1,6 @@
 {
   "navLinks": {
-    "Work": "Work",
+    "Work": "Projects",
     "Experience": "Experience",
     "Skills": "Skills",
     "Testimonials": "Testimonials"
@@ -10,7 +10,7 @@
     "shaping": "Shaping",
     "projects": "into Real Projects",
     "results": "that Deliver Results",
-    "description": "Hi, I'm Lucas, a developer based in Croatia with a passion for code",
+    "description": "Hello, I'm Lucas, a software developer passionate about programming.",
     "button": "See my Work",
     "words": {
       "ideas": "Ideas",
@@ -60,7 +60,7 @@
     "responsibilities": "Responsibilities",
     "cards": {
       "frontend": {
-        "review": "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+        "review": "Lucas brought creativity and technical expertise to the team, significantly improving our frontend performance. His work was essential in delivering faster experiences.",
         "title": "Frontend Developer",
         "date": "January 2025 - Present",
         "responsibilities": {
